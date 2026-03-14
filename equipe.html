@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Équipe | A4P Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="page-wrap">
+    <div class="topbar">
+      <a class="btn ghost" href="index.html">← Retour dashboard</a>
+      <img src="assets/logo-a4p.png" alt="A4P" class="mini-logo" />
+    </div>
+
+    <section class="hero-card compact-hero">
+      <p class="eyebrow">Vue équipe</p>
+      <h1 id="team-title">Équipe</h1>
+      <p id="team-subtitle" class="lead"></p>
+    </section>
+
+    <section class="kpi-grid" id="team-kpis"></section>
+
+    <section class="panel two-col">
+      <div>
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Radar équipe</p>
+            <h3>Moyennes collectives</h3>
+          </div>
+        </div>
+        <canvas id="team-detail-radar" class="radar-canvas" width="520" height="420"></canvas>
+      </div>
+      <div>
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Profils collectifs</p>
+            <h3>Répartition de l’effectif</h3>
+          </div>
+        </div>
+        <div id="team-profiles" class="stack-list"></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Effectif</p>
+          <h3>Tableau joueurs</h3>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Joueur</th>
+              <th>Score</th>
+              <th>Confiance</th>
+              <th>Régulation</th>
+              <th>Engagement</th>
+              <th>Stabilité</th>
+              <th>Profil</th>
+              <th>Alerte</th>
+            </tr>
+          </thead>
+          <tbody id="players-table"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/charts.js"></script>
+  <script src="js/equipe.js"></script>
+</body>
+</html>

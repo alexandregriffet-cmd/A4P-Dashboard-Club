@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A4P Dashboard Club</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-card">
+        <img src="assets/logo-a4p.png" alt="Académie de Performances" class="brand-logo" />
+        <p class="eyebrow">Plateforme Club</p>
+        <h1>A4P Dashboard</h1>
+        <p class="muted">Pilotage mental des équipes, joueurs et coachs.</p>
+      </div>
+
+      <nav class="nav-card">
+        <a class="nav-link active" href="index.html">Vue club</a>
+        <a class="nav-link" href="equipe.html?team=U18%20Rugby">Vue équipe</a>
+        <a class="nav-link" href="joueur.html?id=u18_01">Vue joueur</a>
+        <a class="nav-link" href="https://alexandregriffet-cmd.github.io/PMP-A4P-Acad-mie-de-Performances-/">Module PMP</a>
+        <a class="nav-link" href="https://alexandregriffet-cmd.github.io/CMP-A4P-ACADEMIE-DE-PERFORMANCES-/">Module CMP</a>
+        <a class="nav-link" href="https://alexandregriffet-cmd.github.io/Module-psycho-motionnelle-/">Module Psycho</a>
+      </nav>
+
+      <div class="nav-card compact">
+        <button id="btn-refresh" class="btn primary full">Actualiser les données</button>
+        <button id="btn-reset" class="btn ghost full">Réinitialiser le hub local</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="hero-card">
+        <div>
+          <p class="eyebrow">Dashboard Club A4P</p>
+          <h2>Piloter la performance mentale d’un effectif</h2>
+          <p class="lead">Une vue claire pour les clubs, les coachs et le staff : score mental moyen, radar collectif, alertes et synthèse d’équipe.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn primary" href="equipe.html?team=U18%20Rugby">Ouvrir l’équipe U18 Rugby</a>
+          <a class="btn ghost" href="joueur.html?id=u18_01">Voir un joueur</a>
+        </div>
+      </section>
+
+      <section class="kpi-grid" id="kpi-grid"></section>
+
+      <section class="panel two-col">
+        <div>
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Radar collectif</p>
+              <h3>Équipe dominante sélectionnée</h3>
+            </div>
+            <select id="team-select" class="select"></select>
+          </div>
+          <canvas id="team-radar" class="radar-canvas" width="520" height="420"></canvas>
+        </div>
+        <div>
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Répartition des profils</p>
+              <h3>Lecture rapide staff</h3>
+            </div>
+          </div>
+          <div id="profile-distribution" class="stack-list"></div>
+          <div id="team-alerts" class="alert-box"></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Synthèse des équipes</p>
+            <h3>Comparatif club</h3>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Équipe</th>
+                <th>Joueurs</th>
+                <th>Score moyen</th>
+                <th>Confiance</th>
+                <th>Régulation</th>
+                <th>Engagement</th>
+                <th>Stabilité</th>
+                <th>Profil dominant</th>
+              </tr>
+            </thead>
+            <tbody id="teams-table"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Alertes individuelles</p>
+            <h3>Joueurs à surveiller</h3>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Joueur</th>
+                <th>Équipe</th>
+                <th>Score</th>
+                <th>Dimension faible</th>
+                <th>Niveau</th>
+                <th>Recommandation</th>
+              </tr>
+            </thead>
+            <tbody id="alerts-table"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <details>
+          <summary>JSON partagé du dashboard</summary>
+          <pre id="json-view" class="json-box"></pre>
+        </details>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/charts.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
