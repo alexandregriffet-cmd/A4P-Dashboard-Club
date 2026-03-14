@@ -1,0 +1,36 @@
+{
+  "club": "Académie de Performances - A4P",
+  "equipes": [
+    {
+      "nom": "U18 Rugby",
+      "coach": "Coach Martin",
+      "joueurs": [
+        {"id":"u18_01","prenom":"Lucas","nom":"Martin","profil":"CMP-2","profil_nom":"Mobilisation forte mais régulation fluctuante","score_global":64,"confiance":56,"regulation":44,"engagement":75,"stabilite":81},
+        {"id":"u18_02","prenom":"Enzo","nom":"Benoit","profil":"CMP-1","profil_nom":"Socle mental solide et mobilisable","score_global":72,"confiance":69,"regulation":67,"engagement":74,"stabilite":78},
+        {"id":"u18_03","prenom":"Nathan","nom":"Lopez","profil":"CMP-3","profil_nom":"Potentiel engagé mais confiance fragile","score_global":58,"confiance":43,"regulation":57,"engagement":72,"stabilite":60},
+        {"id":"u18_04","prenom":"Théo","nom":"Perez","profil":"CMP-4","profil_nom":"Fonctionnement mental irrégulier","score_global":51,"confiance":48,"regulation":41,"engagement":59,"stabilite":55},
+        {"id":"u18_05","prenom":"Hugo","nom":"Bernard","profil":"CMP-2","profil_nom":"Mobilisation forte mais régulation fluctuante","score_global":66,"confiance":58,"regulation":46,"engagement":79,"stabilite":80}
+      ]
+    },
+    {
+      "nom": "U16 Football",
+      "coach": "Coach Dubois",
+      "joueurs": [
+        {"id":"u16_01","prenom":"Ilyes","nom":"Moreau","profil":"CMP-1","profil_nom":"Socle mental solide et mobilisable","score_global":74,"confiance":70,"regulation":68,"engagement":77,"stabilite":81},
+        {"id":"u16_02","prenom":"Noah","nom":"Gomes","profil":"CMP-2","profil_nom":"Mobilisation forte mais régulation fluctuante","score_global":63,"confiance":55,"regulation":45,"engagement":73,"stabilite":79},
+        {"id":"u16_03","prenom":"Adam","nom":"Ribeiro","profil":"CMP-5","profil_nom":"Base mentale en construction","score_global":46,"confiance":39,"regulation":36,"engagement":58,"stabilite":50},
+        {"id":"u16_04","prenom":"Milan","nom":"Petit","profil":"CMP-3","profil_nom":"Potentiel engagé mais confiance fragile","score_global":57,"confiance":44,"regulation":55,"engagement":70,"stabilite":59}
+      ]
+    },
+    {
+      "nom": "Seniors Basket",
+      "coach": "Coach Rivière",
+      "joueurs": [
+        {"id":"sen_01","prenom":"Léo","nom":"Vidal","profil":"CMP-1","profil_nom":"Socle mental solide et mobilisable","score_global":76,"confiance":72,"regulation":69,"engagement":78,"stabilite":84},
+        {"id":"sen_02","prenom":"Paul","nom":"Mercier","profil":"CMP-2","profil_nom":"Mobilisation forte mais régulation fluctuante","score_global":65,"confiance":57,"regulation":47,"engagement":77,"stabilite":79},
+        {"id":"sen_03","prenom":"Tom","nom":"Fabre","profil":"CMP-1","profil_nom":"Socle mental solide et mobilisable","score_global":73,"confiance":68,"regulation":66,"engagement":75,"stabilite":83},
+        {"id":"sen_04","prenom":"Rayan","nom":"Garcia","profil":"CMP-4","profil_nom":"Fonctionnement mental irrégulier","score_global":53,"confiance":49,"regulation":42,"engagement":61,"stabilite":60}
+      ]
+    }
+  ]
+}
